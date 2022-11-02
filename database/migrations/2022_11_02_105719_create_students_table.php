@@ -18,14 +18,15 @@ return new class extends Migration
             $table->string('student_first_name');
             $table->string('student_last_name');
             $table->string('student_email');
-            $table->string('student_phone_number')
+            $table->string('student_phone_number');
             $table->enum('student_gender', ['Male', 'Female']);
+            $table->string('check_this')->nullable();
             $table->string('student_image');
             $table->timestamps();
         });
     }
 
-    /**
+    /**s
      * Reverse the migrations.
      *
      * @return void
